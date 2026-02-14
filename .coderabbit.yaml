@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: "en-US"
+reviews:
+  profile: "assertive"
+  path_instructions:
+    - path: "**/*.{ts,tsx}"
+      instructions: |
+        - Strictly forbid the use of 'var'; always use 'const' or 'let'.
+        - Flag any usage of 'any' and suggest specific interfaces.
+        - Ensure all React components use functional patterns and proper Prop types.
+        - Check for missing 'null/undefined' checks (Optional Chaining).
